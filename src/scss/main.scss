@@ -58,4 +58,114 @@ video {
 
 // ---------------------------------------------
 // Votre code ici :
+
+.wrapper-hover .item:hover {
+  background: var(--pink);
+}
+
+.wrapper-transition .item {
+  transition: background 0.4s ease-in-out;
+}
+.wrapper-transition .item:hover {
+  background: var(--pink);
+}
+
+.wrapper-delay .item {
+  transition: background 0.4s 0.6s ease-in-out;
+}
+.wrapper-delay .item:hover {
+  background: var(--pink);
+}
+
+.wrapper-two-properties .item {
+  transition: 0.4s ease-in-out;
+}
+.wrapper-two-properties .item:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.wrapper-delay-one-property .item {
+  transition: background 0.4s ease-in-out;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+.wrapper-delay-one-property .item:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.wrapper-parent .item {
+  transition: background 0.4s ease-in-out;
+}
+.wrapper-parent:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-delay .item {
+  transition-duration: 0.5s;
+}
+.wrapper-parent-delay .item:nth-child(2) {
+  transition-delay: 0.5s;
+}
+.wrapper-parent-delay .item:nth-child(3) {
+  transition-delay: 1s;
+}
+.wrapper-parent-delay:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-children .item {
+  transition-duration: 0.8s;
+}
+.wrapper-parent-children:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-children .wrapper {
+  transition-duration: 0.8s;
+}
+.wrapper-parent-children:hover {
+  background: var(--blue);
+}
+
+.wrapper-parent-children-delay .item {
+  transition-duration: 0.8s;
+  transition-delay: 1s;
+}
+
+.wrapper-parent-children-delay {
+  transition-duration: 0.8s;
+  transition-delay: 0.5s;
+}
+
+.wrapper-parent-children-delay:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-children-delay:hover {
+  background: var(--blue);
+}
+
+.wrapper-translate .item:hover {
+  transform: translateY(30px);
+}
+.wrapper-translate .item {
+  transition: transform 0.4s;
+}
+
+.wrapper-rotate .item:hover {
+  transform: rotate(90deg);
+}
+.wrapper-rotate .item {
+  transition: transform 0.4s;
+}
+
+.wrapper-scale .item:hover {
+  transform: scale(1.2);
+}
+.wrapper-scale .item {
+  transition: transform 0.4s;
+}
 // ---------------------------------------------
